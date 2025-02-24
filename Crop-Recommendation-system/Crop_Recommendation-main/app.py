@@ -38,7 +38,7 @@ if st.button("Predict Crop"):
     
     prediction = model.predict(sc_mx_features)[0]  # Get the predicted class
 
-    if prediction in crop_dict:
+    if prediction in crop_dict: 
         st.success(f"✅ Recommended Crop: **{crop_dict[prediction]}**")
     else:
         st.error("❌ Sorry, we could not determine the best crop with the provided data.")
