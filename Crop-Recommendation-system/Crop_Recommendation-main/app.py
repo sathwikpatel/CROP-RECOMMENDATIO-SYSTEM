@@ -24,10 +24,10 @@ st.write("Enter the required parameters to predict the best crop to cultivate.")
 N = st.number_input("Nitrogen (N)", min_value=0.0, max_value=500.0, step=0.1)
 P = st.number_input("Phosphorus (P)", min_value=0.0, max_value=500.0, step=0.1)
 K = st.number_input("Potassium (K)", min_value=0.0, max_value=500.0, step=0.1)
-temp = st.number_input("Temperature (°C)", min_value=0.0, max_value=50.0, step=0.1)
+temp = st.number_input("Temperature (°C)", min_value=0.2, max_value=56.0, step=0.1)
 humidity = st.number_input("Humidity (%)", min_value=0.0, max_value=100.0, step=0.1)
-ph = st.number_input("Soil pH", min_value=0.0, max_value=14.0, step=0.1)
-rainfall = st.number_input("Rainfall (mm)", min_value=0.0, max_value=500.0, step=0.1)
+ph = st.number_input("Soil pH", min_value=0.0, max_value=12.0, step=0.2)
+rainfall = st.number_input("Rainfall (mm)", min_value=0.0, max_value=400.0, step=0.1)
 
 # Prediction logic
 if st.button("Predict Crop"):
